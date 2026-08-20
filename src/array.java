@@ -7,33 +7,38 @@ void main () {
                {8,9,10}
        };
        System.out.println(arr[0][2]);
+
+
        int [][] arr1 = {
                        {1,2,3},
                        {4,5,6},
-                       {7,8,9}
+                       {7,8,9},
        };
        for(int row = 0;row<=arr.length-1;row++){
-              for (int col = 0;col<=arr.length-1;col++){
-                     System.out.print(arr[row][ col]+ " ");
+              for (int col = 0;col<=arr1.length-1;col++){
+                     System.out.print(arr1[row][ col]+ " ");
 
               }
               System.out.println();
        }
 
-       int [][]arr2 ={{1,2},
+       int [][]arr2 ={
+                      {1,2},
                       {3,4,5,6,},
                       {3,4,5,6,7},
-                      {4}};
-       int rowlength = arr.length;
+                      {4}
+       };
+       int rowlength = arr2.length;
 
-       for(int row =0;row<=arr.length-1;row++){
+       for( int rowIndex =0;rowIndex <= rowlength-1;rowIndex++){
 
-              int collength = arr.length;
-              for(int col=0;col<arr[row].length-1;col++){
-                     System.out.print(arr[row][col]+" ");
+                int collength = arr2[rowIndex].length;
+              for( int colIndex=0;colIndex<=collength-1;colIndex++){
+                     System.out.print(arr2[rowIndex][colIndex] + " ");
               }
               System.out.println();
        }
+
 
 
 
